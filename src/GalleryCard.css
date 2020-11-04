@@ -1,0 +1,6 @@
+.gallery{
+    display: flex;
+    margin-top: 31px;
+    padding: 5px;
+    flex-wrap: wrap;
+}

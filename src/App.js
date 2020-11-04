@@ -2,30 +2,21 @@
 import './App.css';
 import React,{useEffect, useState} from 'react'
 import axios from 'axios';
+import GalleryCard from './GalleryCard';
 
 function App() {
 
-  const [users,setUsers] = useState([]);
+ 
+
   
-  useEffect(()=>{
-     
-       fetch('https://reqres.in/api/users?page=2')
-       .then(res=>res.json())
-       .then(res=>setUsers(res.data))
-       .catch(err=>alert(err.message))
-        
-
-  },[]);
-
-  console.log(users);
-
 
 
   return (
     <div className="app">
-  
         
-      
+        
+      <h1>Heroes section</h1>
+      <GalleryCard />
       
 
     </div>
